@@ -9,6 +9,8 @@ import kotlinx.parcelize.Parcelize
 @Entity
 @Parcelize
 data class Note (
+
+    // Menjadikan id sebagai Promary Key
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
     var id : Int = 0,
